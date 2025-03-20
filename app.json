@@ -1,10 +1,15 @@
 {
   "expo": {
-    "name": "ReactNativeLatest",
-    "slug": "ReactNativeLatest",
+    "name": "Coffee Shop",
+    "slug": "Coffee Shop",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/coffee-icon.png",
+    "splash": {
+      "image": "./assets/images/coffee-splash.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#000000"
+    },
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
