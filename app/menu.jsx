@@ -15,6 +15,7 @@ export default function Menu() {
             <FlatList 
                 data={MenuItems}
                 keyExtractor={item => item.id.toString()}
+                ListFooterComponent={<Text style={styles.end}>End of Menu</Text>}
                 contentContainerStyle={styles.listContainer}
                 renderItem={({item}) => (
                     <View style={styles.card}>
@@ -43,6 +44,13 @@ function createStyles(theme, colorScheme) {
     return StyleSheet.create({
         listContainer: {
             padding: 16,
+        },
+        end:
+        {
+            textAlign: 'center',
+            color: theme.text,
+            marginVertical: 16,
+            fontSize: 16,
         },
         card: {
             flexDirection: 'row',
